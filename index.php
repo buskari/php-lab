@@ -1,27 +1,18 @@
 <?php 
 
-    $stringOne = 'my email is ';
-    $stringTwo = 'mario123@gmail.com';
+    $radius = 25;
+    $pi = 3.14;
 
-    // echo $stringOne.$stringTwo // This is how things are concatenated
-    
-    $name = 'Mario';
+    echo $pi * $radius**2;
 
-    // echo 'My name is '.$mario;
-    
-    // differences between simple and double quotes
-    // echo "Hey my name is $mario"; // double reads variable
-    // echo 'Hey my name is $mario'; // simple reads literal
+    echo $radius++; // shows 25 before de increment
+    echo $radius; // now it shows 26
 
-    // echo "someone screamed \"whaaa\""; // this is how to make "" appears on a string
-    // echo 'someone screamed "whaaa"'; // another way to do the same (easier)
+    echo ++$radius; //now it shows 26 because the increment comes first
 
-    // echo $name[0];
-
-    // echo strlen($name); //function that shows the length of a string
-    // echo strtoupper($name);
-    // echo strtolower($name);
-    echo str_replace('M', 'W', $name);
+    echo floor($pi); // returns only the integer part
+    echo ceil($pi); // return the top integer part
+    echo pi(); // this function return the PI value
 
 ?>
 
